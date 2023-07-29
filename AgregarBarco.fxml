@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="434.0" style="-fx-background-color: #78C4EA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.AgregarBarcoController">
+   <children>
+      <Label layoutX="96.0" layoutY="28.0" text="NUEVO BARCO" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCerrar" layoutX="310.0" layoutY="427.0" mnemonicParsing="false" onAction="#cerrarVentana" style="-fx-background-color: #FFFFFF;" text="CERRAR">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAgregar" layoutX="72.0" layoutY="427.0" mnemonicParsing="false" onAction="#agregarBarco" style="-fx-background-color: #FFFFFF;" text="AGREGAR">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="68.0" layoutY="100.0" text="NOMBRE:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="152.0" text="NUM. DE AMARRE:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="204.0" text="TIPO DE BARCO:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="260.0" text="SOCIO:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="321.0" text="PATRÓN:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="150.0" layoutY="98.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="txtAmarre" layoutX="190.0" layoutY="149.0" prefHeight="25.0" prefWidth="222.0" />
+      <ComboBox fx:id="cmbPatron" layoutX="145.0" layoutY="319.0" prefHeight="25.0" prefWidth="268.0" />
+      <ComboBox fx:id="cmbSocio" layoutX="136.0" layoutY="257.0" prefHeight="25.0" prefWidth="278.0" />
+      <ComboBox fx:id="cmbTipoBarco" layoutX="172.0" layoutY="202.0" prefHeight="25.0" prefWidth="241.0" />
+      <Label layoutX="69.0" layoutY="377.0" text="DESTINO:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbDestino" layoutX="145.0" layoutY="374.0" prefHeight="25.0" prefWidth="268.0" />
+   </children>
+</Pane>

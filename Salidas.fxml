@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="804.0" style="-fx-background-color: #2A8889;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.SalidasController">
+   <children>
+      <Label layoutX="336.0" layoutY="22.0" text="SALIDAS" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="88.0" text="DESTINO:">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSalida" layoutX="251.0" layoutY="85.0" prefHeight="25.0" prefWidth="381.0" />
+      <Button fx:id="btnBuscar" layoutX="649.0" layoutY="87.0" mnemonicParsing="false" onAction="#buscarSalida" style="-fx-background-color: #FFFFFF;" text="BUSCAR">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblSalidas" layoutX="17.0" layoutY="146.0" prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #40CACB;">
+        <columns>
+          <TableColumn fx:id="clmIdPSalida" prefWidth="82.40002632141113" text="ID SALIDA" />
+            <TableColumn fx:id="clmDestino" prefWidth="258.4000473022461" text="DESTINO" />
+            <TableColumn fx:id="clmFecha" prefWidth="220.80001831054688" text="FECHA DE SALIDA" />
+            <TableColumn fx:id="clmHora" prefWidth="208.0" text="HORA DE SALIDA" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCerrar" layoutX="622.0" layoutY="440.0" mnemonicParsing="false" onAction="#cerrarVentana" style="-fx-background-color: #FFFFFF;" text="CERRAR">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAgregar" layoutX="109.0" layoutY="440.0" mnemonicParsing="false" onAction="#agregarNuevaSalida" style="-fx-background-color: #FFFFFF;" text="AGREGAR NUEVA SALIDA">
+         <font>
+            <Font name="Berlin Sans FB" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
